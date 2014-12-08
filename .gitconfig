@@ -1,0 +1,30 @@
+[alias]
+    br = branch
+    st = status
+    ci = commit
+    co = checkout
+    up = checkout
+    sum = !git log -1 && echo "Branch:" && git branch --contains
+    remotes = remote -v
+    branches = branch -v
+    tags = tag --list
+    transplant = cherry-pick
+    fuckit = reset --hard HEAD
+
+[color]
+    ui = auto
+
+[user]
+    name = Tim Babych\n
+    email = tim.babych@gmail.com
+
+[push]
+    default = simple
+
+[core]
+    pager =
+    excludesfile = /home/tim/.gitignore
+
+[advice]
+    detachedHead = false
+
