@@ -1,0 +1,37 @@
+[ui]
+username = Tim Babych <tim.babych@gmail.com>
+ssh = ssh -C
+merge = meld
+
+[extensions]
+graphlog=
+rebase=
+bookmarks= 
+color=
+fetch=
+schemes=
+transplant=
+mq=
+purge=
+progress=
+hgext.extdiff =
+histedit=
+hgext.convert=
+shelve=
+accept_branches = /home/tim/vendor/accept-branches/accept_branches.py
+
+[tortoisehg]
+vdiff = meld
+editor = gedit
+
+[web]
+cacerts = /etc/ssl/certs/ca-certificates.crt
+
+[diff]
+git = 1
+
+[alias]
+stash = shelve
+unstash = unshelve
+
+#%include /home/tim/vendor/tortoisehg/contrib/mergetools.rc
