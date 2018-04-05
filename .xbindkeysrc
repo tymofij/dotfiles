@@ -1,4 +1,0 @@
-# needs `xautomation` package
-
-"xte 'keydown Alt_L' 'key F4' 'keyup Alt_L'"
-  b:9
