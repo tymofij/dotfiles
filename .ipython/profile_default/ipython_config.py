@@ -1,16 +1,13 @@
+from IPython.terminal.prompts import Prompts, Token
+
 c = get_config()
+# c.TerminalIPythonApp.display_banner = False
+c.TerminalInteractiveShell.confirm_exit = False
 
-c.InteractiveShell.confirm_exit = False
+class MyPrompt(Prompts):
+    def in_prompt_tokens(self, cli=None):
+         return [(Token.Prompt, '>>> ')]
+    def out_prompt_tokens(self):
+        return [(Token.Prompt,  '  ')]
 
-# that does not seem to work
-#c.TerminalIPythonApp.nosep = True
-
-c.InteractiveShell.separate_in = ''
-c.InteractiveShell.separate_out = ''
-c.InteractiveShell.separate_out2 = ''
-
-
-c.PromptManager.in_template  = '>>> '
-c.PromptManager.in2_template = ''
-c.PromptManager.out_template = ' '
-
+c.TerminalInteractiveShell.prompts_class = MyPrompt
