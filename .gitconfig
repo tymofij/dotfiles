@@ -24,7 +24,7 @@
 [user]
     name = Tim Babych
     email = tim.babych@gmail.com
-    # signingkey = B7B9999F2C43B715
+    signingkey = B7B9999F2C43B715
 
 [advice]
     detachedHead = false
@@ -44,4 +44,4 @@
     required = true
 
 [commit]
-    gpgsign = true
+    # gpgsign = true
