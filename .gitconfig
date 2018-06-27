@@ -10,6 +10,7 @@
     branches = branch -vv
     tags = tag --list
     fuckit = reset --hard HEAD
+    set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
 
 [color]
     ui = auto
