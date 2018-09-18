@@ -11,6 +11,7 @@
     tags = tag --list
     fuckit = reset --hard HEAD
     set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
+    list-detached = !git log --graph --decorate `git rev-list -g --all`
 
 [color]
     ui = auto
