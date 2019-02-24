@@ -21,7 +21,6 @@
 
 [core]
     pager =
-    excludesfile = /Users/tim/.gitignore_global
 
 [user]
     name = Tim Babych
